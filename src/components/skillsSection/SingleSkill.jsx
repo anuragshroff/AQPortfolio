@@ -1,13 +1,12 @@
-const SingleSkill = ({ imgSvg, text }) => {
+import React from "react";
+
+const SingleSkill = ({ text, imgSvg, color }) => {
   return (
-    <div className="hover:-translate-y-10 transition-all duration-500">
-      <div className="flex flex-col items-center gap-2 relative">
-        <div className="bg-white text-cyan h-[100px] w-[100px] flex items-center justify-center rounded-full hover:text-darkGrey hover:scale-105 transform transition-all duration-500 text-6xl border-4 border-orange">
-          {imgSvg}
-        </div>
-        <p className="text-white font-bold">{text}</p>
+    <div className="flex flex-col items-center p-4 rounded-lg transition-all duration-300 hover:bg-gray-50 hover:shadow-lg dark:hover:bg-gray-800">
+      <div className={`text-4xl md:text-5xl ${color || "text-gray-700"}`}>
+        {imgSvg}
       </div>
-      <div className="w-[100px] h-[200px] bg-orange absolute top-[50px] -z-10"></div>
+      <p className="text-center mt-3 text-sm md:text-base font-medium">{text}</p>
     </div>
   );
 };

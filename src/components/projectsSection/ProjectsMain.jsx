@@ -5,17 +5,17 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const projects = [
   {
-    name: "Vacation of Africa",
-    year: "Mar2022",
+    name: "Etco Immigration",
+    year: "Mar2023",
     align: "right",
-    image: "../../public/images/website-img-1.jpg",
+    image: "../../public/images/website-img-2.png",
     link: "#",
   },
   {
-    name: "Moola App",
-    year: "Sept2022",
+    name: "Scentilla Faragrance",
+    year: "Sept2024",
     align: "left",
-    image: "../../public/images/website-img-2.webp",
+    image: "../../public/images/website-img-1.png",
     link: "#",
   },
   {
